@@ -1,0 +1,16 @@
+<style>
+    h1{text-align:center;color:#530505;background-color:#b3c7d8}
+    </style>
+    <h1>Types of bikes</h1>
+    {% if typesofbike_list %}
+        <ul>
+        {% for genre in types_list %}
+        <h2><a href="/rowery/">{{typesofbikes.typesofbikes_name}}</a></h2>
+        {% endfor %}
+        </ul>
+        {% else %}
+        <p>No types of bikes are available.</p>
+    {% endif %}
+    <center>
+        <img src="https://cdn.shoplightspeed.com/shops/617274/files/31327869/2021-types-of-bikes.png" width="1300" height="1300">    
+    </center>

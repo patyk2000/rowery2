@@ -1,0 +1,16 @@
+<style>
+    h1{text-align:center;color:#ae1717;background-color:#782c84}
+    </style>
+    <h1>Parts:</h1>
+    {% if parts_list %}
+        <ul>
+        {% for genre in genre_list %}
+        <h2><a href="/rowery2/parts/}">{{parts.parts_name}}</a></h2>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No parts are available.</p>
+        <center>
+            <img src="https://r2-bike.com/media/image/product/191587/lg/sram-xx1-eagle-dub-mtb-group-1x12-boost-52-teeth~2.jpg" width="300" height="300">    
+        </center>
+    {% endif %}

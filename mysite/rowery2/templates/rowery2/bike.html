@@ -1,0 +1,16 @@
+<style>
+    h1{text-align:center;color:#eb5c52;background-color:#0a0a0a}
+   </style>
+   <h1>Bikes:</h1>
+   {% if bike_list %}
+       <ul>
+       {% for bike in bike_list %}
+       <h2><a href="/rowery/"></a>>#{{movie.movie_name}}</a></h2>
+       {% endfor %}
+       </ul>
+   {% else %}
+       <p>No bikes are available.</p>
+   {% endif %}
+   <center>
+       <img src="https://www.greenbike.pl/images/Specialized-Demo-Race-29-2020-rower-zjazdowy-downhill-freeride-002.jpg" width="300" height="300">    
+   </center>

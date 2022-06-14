@@ -1,0 +1,16 @@
+<style>
+    h1{text-align: center;color:#2792e9;background-color:#5a1818}
+</style>
+<h1>Witam na mojej pierwszej stronie</h1>
+{% if index_list %}
+    <ul>
+    {% for index in index_list%}
+        <h2><a href="/rowery/{{index.id}}">{{index}}</a></h2>
+    {% endfor%}
+    </ul>
+{% else %}
+    <p> No index available.</p>
+{% endif %}
+<center>
+    <img src="https://ohme.pl/portal/wp-content/uploads/2017/01/co-zrobic-z-uczuciem-pustki.jpg" width="300" height="300">    
+</center>
